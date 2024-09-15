@@ -1,0 +1,65 @@
+@import url("./reset.css");
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .interface {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+main .interface .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+main .interface h1 {
+  font-size: 38px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--preto);
+}
+
+main .container p {
+  font-size: 20px;
+}
+
+main .container button {
+  background-color: var(--branco);
+  border: none;
+  width: 150px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main .container button:hover {
+  background-color: var(--brancoEscuro);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 0px 5%
+  }
+
+  main .interface h1 {
+    font-size: 28px;
+  }
+
+  main .container p {
+    font-size: 18px;
+  }
+
+  main .container button:active {
+    background-color: var(--brancoEscuro);
+  }
+}
